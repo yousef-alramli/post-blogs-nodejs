@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --env-file=.env ./api/index.mjs",
+    "start": "nodemon --env-file=.env ./app.mjs",
     "test": "test",
     "migrate:up": "npx sequelize-cli db:migrate",
     "migrate:undo": "npx sequelize-cli db:migrate:undo",
