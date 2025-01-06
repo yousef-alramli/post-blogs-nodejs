@@ -1,10 +1,10 @@
-import './models/index.mjs'
+import '../models/index.mjs'
 
 import express from 'express'
-import { usersRoutes } from './routes/users.mjs';
-import { validateToken } from './middlewears/validateToken.mjs';
-import { authRoutes } from './routes/auth.mjs';
-import { postsRoutes } from './routes/posts.mjs';
+import { usersRoutes } from '../routes/users.mjs';
+import { validateToken } from '../middlewears/validateToken.mjs';
+import { authRoutes } from '../routes/auth.mjs';
+import { postsRoutes } from '../routes/posts.mjs';
 import cors from 'cors';
 
 const app = express();
