@@ -1,21 +1,9 @@
 'use strict';
 
 import { Sequelize } from 'sequelize'
+import config from '../config/config.mjs';
 
-const sequelize = new Sequelize({
-  database: "defaultdb",
-  username: "avnadmin",
-  password: "AVNS_VXkumtITzcmP8GuQOV9",
-  host: 'pg-post-blog-post-blog.l.aivencloud.com',
-  dialect: 'postgres',
-  port: 26682,
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false
-    }
-  },
-});
+const sequelize = new Sequelize(config.development);
 
 try {
   await sequelize.authenticate();
