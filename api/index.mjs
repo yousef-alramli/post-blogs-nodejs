@@ -1,6 +1,4 @@
-import '../models/index.mjs'
-
-import express from 'express'
+import express from 'express';
 import { usersRoutes } from '../routes/users.mjs';
 import { validateToken } from '../middlewears/validateToken.mjs';
 import { authRoutes } from '../routes/auth.mjs';
