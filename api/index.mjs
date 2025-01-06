@@ -3,6 +3,7 @@ import { usersRoutes } from '../routes/users.mjs';
 import { validateToken } from '../middlewears/validateToken.mjs';
 import { authRoutes } from '../routes/auth.mjs';
 import { postsRoutes } from '../routes/posts.mjs';
+import serverless from "serverless-http";
 import cors from 'cors';
 
 const app = express();
@@ -30,4 +31,4 @@ app.listen(PORT, (error) => {
   }
 });
 
-export default app;
+export default serverless(app);
